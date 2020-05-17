@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Roboto:ital,wght@0,300;0,500;1,300&display=swap');
+
+/* 
+
+FONTS -- 
+
+font-family: 'Oswald', sans-serif;
+
+- 300 (Light - Jumbotron)
+- 500 (Titles / Navbar)
+
+font-family: 'Roboto', sans-serif;
+
+- 300 (Light - Text)
+- 300i (Light Italic - Jumbotron)
+- 500 (Benefits List)
+
+COLORS -- 
+
+BLUE: #264074;
+BLACK: #272424;
+WHITE: #F3F5F4;
+
+*/
+
+
+body{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    color: #272424;
+    background-color: #f3f5f4;
+}
+
+article.container-fluid{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/* Text*/
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+
+.jumbotron p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.jumbotron p, h1{
+    color: #F3F5F4;
+}
+
+.title{
+    font-size: 1.875rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.subtitle{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1.125;
+    line-height: 1.4;
+    padding-top: 0;
+}
+
+hr{
+    margin-bottom: 0.625rem;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 380px;
+    border: 1px solid #264074;
+}
+
+/*Nav*/
+
+
+
+
+
+/* Header */
+
+.header-container{
+    height: 100vh;
+    background: url(assets/hero.jpeg) no-repeat top center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.jumbotron{
+    background-color: rgb(38, 64, 116, 0.58);
+}
+
+@media only screen and (min-width: 500px) {
+  .jumbotron{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+.opaque-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(243, 245, 244, 0.2);
+}
+
+
+/* Classes Section */
+
+#classes{
+    margin-top: 80px;
+}
+
+
+.classes-img{
+    position: relative;
+    width: 100%;
+    height: auto;
+
+}
