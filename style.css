@@ -20,6 +20,7 @@ COLORS --
 BLUE: #264074;
 BLACK: #272424;
 WHITE: #F3F5F4;
+Brownish: #BFA17D; rgb(191, 161, 125, 0.72);
 
 */
 
@@ -28,12 +29,18 @@ body{
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
     color: #272424;
-    background-color: #f3f5f4;
+    background-color: rgba(191, 161, 125, 0.404);
+    background-image: linear-gradient(to bottom right, #F3F5F4, #BFA17D);
 }
+
 
 article.container-fluid{
     padding-right: 0;
     padding-left: 0;
+}
+
+section{
+    margin-top: 50px;
 }
 
 /* Text*/
@@ -54,9 +61,9 @@ h1{
 }
 
 .title{
-    font-size: 1.875rem;
     padding-bottom: 0;
     margin-bottom: 0;
+    font-size:4vmin;
 }
 
 .subtitle{
@@ -71,20 +78,76 @@ hr{
     margin-top: 0;
     padding-top: 0;
     padding-bottom: 0;
-    width: 380px;
+    width: 50%;
     border: 1px solid #264074;
+}
+
+@media only screen and (max-width: 445px) {
+    hr{
+        width: 100%;
+    }
 }
 
 /*Nav*/
 
+@media only screen and (max-width: 445px) {
+    .logo-img{
+        width: 165px;
+        height: 45px;
+    }
+}
 
+/*Smalls texts*/
 
+p.box-title{
+    padding-bottom: 0;
+    margin-bottom: 5px;
+    font-size: 3vmin;
+    
+}
+p.hours{
+    color: #264074!important;
+}
 
+p.box-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #272424;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-size: 2.5vmin;
+}
+
+p.title-classes{
+    border-top: 1px solid #264074;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+p.text-classes{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+a.box-link{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #264074;
+    text-decoration: none;
+    font-size: 2.5vmin;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/*SECTIONS*/
 
 /* Header */
 
 .header-container{
     height: 100vh;
+    /* Code Source: https://css-tricks.com/perfect-full-page-background-image/*/
     background: url(assets/hero.jpeg) no-repeat top center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -107,6 +170,7 @@ hr{
   }
 }
 
+/*Code Source: opaque-overlay: code institute, whiskey project*/
 .opaque-overlay{
     position: absolute;
     top: 0;
@@ -117,16 +181,122 @@ hr{
 }
 
 
-/* Classes Section */
+/* Classes */
 
-#classes{
-    margin-top: 80px;
+
+.classes-container{
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
+.card{
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.card-body{
+    padding: 5px;
+}
 
 .classes-img{
     position: relative;
     width: 100%;
     height: auto;
-
+    border-radius: 10px;
+    border-top: 1px solid #272424;
+    border-left: 1px solid #272424;
+    border-right: 1px solid #272424;
 }
+
+
+/*Benefits*/
+
+.benefits-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+
+.benefit-box{
+    height: 30%;
+    padding: 20px;
+}
+
+.benefit-item{
+    display: block;
+}
+
+.yoga-icon{
+    float: left;
+    width: 60px;
+    height: auto;
+    margin-right: 5px;
+}
+
+
+
+.openinghours{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    background: url(assets/opening.png);
+    min-height: 390px;
+    max-width: 264px;
+    border-radius: 23px;
+} 
+
+
+
+
+
+/*Schedule*/
+.schedule-days{
+    /*padding shortcut doesn't work for me here*/
+    border: 1px solid #264074;
+    font-size: 100%;
+    padding-top: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+p.weekday{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-size: 3vmin;
+}
+
+.box-allevels{
+    background-color: rgba(243, 245, 244, 0.55);
+    padding: 3px;
+    margin: 3px 0 3px 0;
+}
+
+.box-beginners{
+    background-color: rgba(191, 161, 125, 0.55);
+    padding: 3px;
+    margin: 3px 0 3px 0;
+}
+
+.box-intermediate{
+    background-color: rgba(38, 64, 116, 0.55);
+    padding: 3px;
+    margin: 3px 0 3px 0;
+}
+
+.box-advanced{
+    background-color: rgba(39, 36, 36, 0.55);
+    padding: 3px;
+    margin: 3px 0 3px 0;
+}
+
+

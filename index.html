@@ -11,37 +11,44 @@
 
 <body>
     <article class="container-fluid justify-content-center">
-        <div class="container navigation-container">
-            <nav class="navbar navbar-expand-md navbar-light bg-light">
-                <a class="navbar-brand" href="#">fabula</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container navigation-container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/logo-vf.svg" width="286" height="90" class="logo-img" alt="Fabula Yoga & Retreat Center Logo" loading="lazy">
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">CLASSES</a>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-uppercase" href="#">CLASSES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SCHEDULE</a>
+                            <a class="nav-link text-uppercase" href="#">SCHEDULE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">PLANS</a>
+                            <a class="nav-link text-uppercase" href="#">PLANS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CENTER</a>
+                            <a class="nav-link text-uppercase" href="#">INSTALLATIONS</a>
                         </li>
-                        <li class="nav-item d-none d-md-inline">
-                            <a class="nav-link" href="#">CONNECT WITH US</a>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">CONNECT WITH US</a>
                         </li>
+                        <li class="nav-item d-none d-inline">
+                            <a class="nav-link text-uppercase" href="#">BOOK ONLINE</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav> 
-        </div>
+            </div>
+        </nav>    
+
         <header id="header" class="container-fluid header-container">
             <div class="opaque-overlay">&nbsp;</div>
             <div class="row">
-                <div class="col-12 mt-5">
+                <div class="col-12">
                     <div class="jumbotron text-center">
                         <h1>Find your inner flow</h1>
                         <p>Try your first class for free!</p>
@@ -55,46 +62,68 @@
             <div class="section-header text-center">
                 <p class="title">CLASSES FOR ALL LEVELS</p>
                 <hr>
-                <p class="subtitle">Try them all, is fun!</br>
-                See what fits you better, and what it makes you feel confortable.</br>
-                If you are a beginner, HATHA for Beginners will guide you to other practices.
-                </p>
+                <p class="subtitle">If you never practised before,<br>Hatha Beginners is a good start!</p>   
             </div>
-            <div class="row justify-content-center mt-5">
+            <div class="row justify-content-center">
                 <div class="col-6 col-md-3">
-                    <img src="assets/ashtanga.png" alt="Girl doing yoga Cobra's Pose at Fabula Center" class="img-responsive classes-img">
-                    <p>ASHTANGA YOGA</p>
-                    <a href='#'>See More</a>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <div class="classes-box">
-                        <img src="assets/hatha.png" alt="Girl doing Hatha Yoga plank pose at Fabula center" class="img-responsive classes-img">
-                        <p>HATHA YOGA</p>
+                    <div class="card">
+                        <img src="assets/ashtanga.png" alt="Girl doing yoga Cobra's Pose at Fabula Center" class="card-img-top img-responsive classes-img">
+                        <div class="card-body">
+                            <p class="box-title title-classes">ASHTANGA YOGA</p>
+                            <p class="box-text text-classes">All Levels</p>
+                            <a class="box-link" href='https://en.wikipedia.org/wiki/Ashtanga_(eight_limbs_of_yoga)' target="_blank">See More</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 text-center">
-                    <div class="classes-box">
-                        <img src="assets/vinyasa.png" alt="Girl doing yoga Downward Dog Pose at Fabula Center" class="img-responsive classes-img">
-                        <p>VINYASA FLOW YOGA</p>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img src="assets/hatha.png" alt="Girl doing yoga Cobra's Pose at Fabula Center" class="card-img-top img-responsive classes-img">
+                        <div class="card-body">
+                            <p class="box-title title-classes">HATHA BEGINNERS</p>
+                            <p class="box-text text-classes">Focus Technique</p>
+                            <a class="box-link" href='https://en.wikipedia.org/wiki/Hatha_yoga' target="_blank">See More</a>
+                        </div>
                     </div>
-                </div>  
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img src="assets/vinyasa.png" alt="Girl doing yoga Cobra's Pose at Fabula Center" class="card-img-top img-responsive classes-img">
+                        <div class="card-body">
+                            <p class="box-title title-classes">VINYASA FLOW</p>
+                            <p class="box-text text-classes">Mid-Advance</p>
+                            <a class="box-link" href='https://en.wikipedia.org/wiki/Viny%C4%81sa' target="_blank">See More</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="d-none d-md-inline w-100"></div>
-                <div class="col-6 col-md-3 text-center">
-                    <div class="classes-box">
-                        <img src="assets/yinyoga.png" alt="Girl Breathing at a Yin Yan Yoga Pose at Fabula Center" class="img-responsive classes-img">
-                        <p>YIN YOGA</p>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img src="assets/yinyoga.png" alt="Girl doing yoga Cobra's Pose at Fabula Center" class="card-img-top img-responsive classes-img">
+                        <div class="card-body">
+                            <p class="box-title title-classes">YIN YOGA</p>
+                            <p class="box-text text-classes">All Levels</p>
+                            <a class="box-link" href='https://en.wikipedia.org/wiki/Yin_Yoga' target="_blank">See More</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 text-center">
-                    <div class="classes-box">
-                        <img src="assets/poweryoga.png" alt="Girl doing yoga Power Yoga Pose at Fabula Center" class="img-responsive classes-img">
-                        <p>POWER YOGA</p>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img src="assets/poweryoga.png" alt="Girl doing yoga Cobra's Pose at Fabula Center" class="card-img-top img-responsive classes-img">
+                        <div class="card-body">
+                            <p class="box-title title-classes">POWER YOGA</p>
+                            <p class="box-text text-classes">Mid-Advance</p>
+                            <a class="box-link" href='https://en.wikipedia.org/wiki/Power_Yoga' target="_blank">See More</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 text-center">
-                    <div class="classes-box">
-                        <img src="assets/pranayama.png" alt="Girl's Cross legs doing Pranayama at Fabula Center" class="img-responsive classes-img">
-                        <p>PRANAYAMA & MEDITATION</p>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img src="assets/pranayama.png" alt="Girl doing yoga Cobra's Pose at Fabula Center" class="card-img-top img-responsive classes-img">
+                        <div class="card-body">
+                            <p class="box-title title-classes">PRANAYAMA & MEDITATION</p>
+                            <p class="box-text text-classes">Included in all our classes.</p>
+                            <a class="box-link" href='https://en.wikipedia.org/wiki/Pranayama' target="_blank">See More</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -102,56 +131,232 @@
         </section>
 
         <section id="benefits" class="container">
-            <div class="section-title">
-                <p> MORE HEALTHY, 
-                MORE HAPPY
-                </p>
-                <hr class="w-25">
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-8">
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <div class="benefit-box">POWER YOUR CALM</div>
+
+
+           <div class="row justify-content-center">
+                <div class="d-none d-md-inline col-md-6">
+                    <div class="benefits-container">
+                        <div class="row justify-content-center">
+                            <div class="col-6">
+                                <div class="benefit-item">
+                                    <img class="d-inline yoga-icon" src="assets/icon-1.svg" alt="siloutte icon yoga pose">
+                                    <p class="d-inline">POWER YOUR CALM</p>
+                                </div>
+                            </div>
+                            <div class="col-6"> 
+                                <div class="benefit-item">
+                                    <img class="d-inline yoga-icon" src="assets/icon-2.svg" alt="siloutte icon yoga pose" style="display: left;">
+                                    <p class="d-inline">INCREASE FLEXIBILITY AND BALANCE</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="benefit-box">INCREASE FLEXIBILITY </br> AND BALANCE</div>
+                        <div class="row justify-content-center">
+                            <div class="col-6">
+                                <div class="benefit-item">
+                                    <img class="d-inline yoga-icon" src="assets/icon-3.svg" alt="siloutte icon yoga pose">
+                                    <p class="d-inline">POWER YOUR CALM</p>
+                                </div>
+                            </div>
+                            <div class="col-6"> 
+                                <div class="benefit-item">
+                                    <img class="d-inline yoga-icon" src="assets/icon-4.svg" alt="siloutte icon yoga pose" style="display: left;">
+                                    <p class="d-inline">INCREASE FLEXIBILITY AND BALANCE</p>
+                                </div>
+                            </div>
                         </div>
+                        <div class="row justify-content-center">
+                            <div class="col-6">
+                                <div class="benefit-item">
+                                    <img class="d-inline yoga-icon" src="assets/icon-3.svg" alt="siloutte icon yoga pose">
+                                    <p class="d-inline">POWER YOUR CALM</p>
+                                </div>
+                            </div>
+                            <div class="col-6"> 
+                                <div class="benefit-item">
+                                    <img class="d-inline yoga-icon" src="assets/icon-4.svg" alt="siloutte icon yoga pose" style="display: left;">
+                                    <p class="d-inline">INCREASE FLEXIBILITY AND BALANCE</p>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <div class="benefit-box">PERFECTS YOUR POSTURE</div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="benefit-box">IMPROVES YOUR MOOD</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <div class="benefit-box">RELIEVES ANXIETY </br> AND DEPRESSION</div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="benefit-box">HELPS YOU FOCUS</div>
+                </div> 
+
+                <div class="col-12 col-md-3 text-center">
+                    <div class="openinghours text-center">
+                        <div class="openinghours-textcontainer">
+                            <p>FROM MONDAY<br>
+                            TO SATURDAY<br>
+                            ALL LEVELS</p>
+                            <p>Try your first class for free!</p>
+                            <a class="btn btn-light">BOOK ONLINE</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
-                <div class="timetable-box">everyday</div>
-                </div>
-            </div>       
+            </div>         
         </section>
 
         <section id="schedule" class="container">
-            <div class="section-title">
-                <p> AT ANYTIME, <br>
-                CHECK OUR SCHEDULE. 
-                </p>
-                <hr class="w-25">
+            <div class="section-header text-center">
+                <p class="title">WEEKLY SCHEDULE</p>
+                <hr>
+                <p class="subtitle">Contact us if schedule doesn’t fit! We have a solution for you!</p>
             </div>
-            <div class="row">
-                <div class="col-12">
-                Calendar
+            <div class="row mt-3 align-content-center">
+                <div class="col-4 col-md-2 text-center">
+                    <div class="container schedule-days">
+                        <p class="weekday">MONDAY</p>
+                        <div class="box-intermediate hour-1">
+                            <p class="box-title hours">07:30 - 09:00</p>
+                            <p class="box-text">Power Yoga<br>Intermediate</p>
+                        </div>  
+                        <div class="box-beginners hour-2">
+                            <p class="box-title hours">08:00 - 09:00</p>
+                            <p class="box-text">Hatha Vinyasa<br>Beginners</p>
+                        </div>  
+                        <div class="box-beginners hour-3">
+                            <p class="box-title hours">18:00 - 19:00</p>
+                            <p class="box-text">Hatha Vinyasa <br>Beginners</p>
+                        </div>     
+                        <div class="hour-4 box-intermediate">
+                            <p class="box-title hours">18:30 - 20:00</p>
+                            <p class="box-text">Power Yoga<br>Intermediate</p>
+                        </div> 
+                        <div class="invisible hour-5 box-allevels">
+                            <p class="box-title hours">00:00 - 00:00</p>
+                            <p class="box-text">Yoga<br>Yoga</p>
+                        </div> 
+                    </div>
                 </div>
+                <div class="col-4 col-md-2 text-center">
+                    <div class="container schedule-days">
+                        <p class="weekday">TUESDAY</p>
+                        <div class="hour-1 box-advanced">
+                            <p class="box-title hours">07:30 - 09:00</p>
+                            <p class="box-text">Vinyasa Flow<br>Advanced</p>
+                        </div>  
+                        <div class="hour-2 box-allevels">
+                            <p class="box-title hours">09:00 - 10:00</p>
+                            <p class="box-text">Yin Yoga<br>All Levels</p>
+                        </div>  
+                        <div class="hour-3 box-intermediate">
+                            <p class="box-title hours">18:00 - 19:30</p>
+                            <p class="box-text">Vinyasa Flow<br>Intermediate</p>
+                        </div>     
+                        <div class="hour-4 box-allevels">
+                            <p class="box-title hours">18:30 - 20:00</p>
+                            <p class="box-text">Ashtanga Flow<br>All Levels</p>
+                        </div> 
+                        <div class="invisible hour-5 box-allevels">
+                            <p class="box-title hours">18:30 - 20:00</p>
+                            <p class="box-text">Ashtanga Flow<br>All Levels</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-4 col-md-2 text-center">
+                    <div class="container schedule-days">
+                        <p class="weekday">WEDNESDAY</p>
+                        <div class="hour-1 box-advanced">
+                            <p class="box-title hours">07:30 - 09:00</p>
+                            <p class="box-text">Power Yoga<br>Advanced</p>
+                        </div>  
+                        <div class="hour-2 box-beginners">
+                            <p class="box-title hours">08:00 - 09:00</p>
+                            <p class="box-text">Hatha Vinyasa<br>Beginners</p>
+                        </div>  
+                        <div class="hour-3 box-beginners">
+                            <p class="box-title hours">18:00 - 19:00</p>
+                            <p class="box-text">Hatha Vinyasa<br>Beginners</p>
+                        </div>     
+                        <div class="hour-4 box-allevels">
+                            <p class="box-title hours">18:30 - 20:00</p>
+                            <p class="box-text">Ashtanga Yoga<br>All Levels</p>
+                        </div> 
+                        <div class="hour-5 box-allevels">
+                            <p class="box-title hours">18:30 - 20:00</p>
+                            <p class="box-text">Yin Yoga<br>All Levels</p>
+                        </div> 
+                    </div>
+                </div>
+                <!--source code: bootstrap documentation-->
+                <div class="d-md-none mt-3 d-inline w-100"></div>
+
+                <div class="col-4 col-md-2 text-center">
+                    <div class="container schedule-days">
+                        <p class="weekday">THURSDAY</p>
+                        <div class="hour-1 box-allevels">
+                            <p class="box-title hours">07:30 - 09:00</p>
+                            <p class="box-text">Vinyasa Flow<br>All Levels</p>
+                        </div>  
+                        <div class="hour-2 box-allevels">
+                            <p class="box-title hours">09:00 - 10:00</p>
+                            <p class="box-text">Yin Yoga<br>All Levels</p>
+                        </div>  
+                        <div class="hour-3 box-beginners">
+                            <p class="box-title hours">18:00 - 19:00</p>
+                            <p class="box-text">Hatha Vinyasa<br>Beginners</p>
+                        </div>     
+                        <div class="hour-4 box-intermediate">
+                            <p class="box-title hours">18:30 - 20:00</p>
+                            <p class="box-text">Ashtanga Yoga<br>Intermediate</p>
+                        </div> 
+                        <div class="hour-5 box-allevels">
+                            <p class="box-title hours">18:30 - 20:00</p>
+                            <p class="box-text">Yin Yoga<br>All Levels</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-4 col-md-2 text-center">
+                    <div class="container schedule-days"> 
+                        <p class="weekday">FRIDAY</p>
+                        <div class="hour-1 box-advanced">
+                            <p class="box-title hours">07:30 - 09:00</p>
+                            <p class="box-text">Power Yoga<br>Advanced</p>
+                        </div>  
+                        <div class="hour-2 box-allevels">
+                            <p class="box-title hours">09:00 - 10:00</p>
+                            <p class="box-text">Yin Yoga<br>All Levels</p>
+                        </div>  
+                        <div class="hour-3 box-intermediate">
+                            <p class="box-title hours">18:00 - 19:30</p>
+                            <p class="box-text">Ashtanga Yoga<br>Intermediate</p>
+                        </div>     
+                        <div class="hour-4 box-advanced">
+                            <p class="box-title hours">18:30 - 20:00</p>
+                            <p class="box-text">Vinyasa Flow<br>Advanced</p>
+                        </div> 
+                        <div class="hour-5 box-allevels">
+                            <p class="box-title hours">18:30 - 20:00</p>
+                            <p class="box-text">Yin Yoga<br>All Levels</p>
+                        </div> 
+                    </div>   
+                </div>
+                <div class="col-4 col-md-2 text-center">
+                    <div class="container schedule-days"> 
+                        <p class="weekday">FRIDAY</p>
+                        <div class="hour-1 box-allevels">
+                            <p class="box-title hours">09:00 - 10:00</p>
+                            <p class="box-text">Power Yoga<br>Advanced</p>
+                        </div>  
+                        <div class="hour-2 box-advanced">
+                            <p class="box-title hours">09:00 - 10:30</p>
+                            <p class="box-text">Vinyasa Flow<br>Sequence</p>
+                        </div>  
+                        <div class="hour-3 box-beginners">
+                            <p class="box-title hours">10:30 - 11:00</p>
+                            <p class="box-text">Level Up<br>Workshop</p>
+                        </div>     
+                        <div class="invisible hour-4 box-advanced">
+                            <p class="box-title hours">18:30 - 20:00</p>
+                            <p class="box-text">Vinyasa Flow<br>Advanced</p>
+                        </div> 
+                        <div class="invisible hour-5 box-allevels">
+                            <p class="box-title hours">18:30 - 20:00</p>
+                            <p class="box-text">Yin Yoga<br>All Levels</p>
+                        </div> 
+                    </div>   
+                </div>
+                
             </div>
         </section>
 
