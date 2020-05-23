@@ -24,15 +24,13 @@ Brownish: #BFA17D; rgb(191, 161, 125, 0.72);
 
 */
 
-
 body{
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
     color: #272424;
-    background-color: rgba(191, 161, 125, 0.404);
-    background-image: linear-gradient(to bottom right, #F3F5F4, #BFA17D);
+    background: rgb(38,64,116,.16);
+    
 }
-
 
 article.container-fluid{
     padding-right: 0;
@@ -43,12 +41,106 @@ section{
     margin-top: 50px;
 }
 
+
 /* Text*/
 
 h1{
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
 }
+
+h4{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+p{
+    font-size: 0.80rem;
+}
+
+p.card-title{
+    font-size: 1rem;
+    padding-bottom: 0;
+    border-top: 1px solid #264074;
+    margin-bottom: 0;
+    
+}
+
+p.card-text{
+    padding-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 0;
+    color: #272424;
+    
+}
+
+a.card-link{
+    font-size: 0.90rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #264074;
+}
+
+
+a.schedule-link{
+    font-size: 0.90rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #264074;
+}
+
+/*Plans Cards Text*/
+
+p.plans-class{
+    font-size: 19px;
+    color:#F3F5F4;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: 300;
+    letter-spacing: 2px;
+
+}
+
+p.plans-price{
+    font-size: 48px;
+    color:#F3F5F4;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+
+
+/*Cards Text
+
+p.card-title{
+    border-top: 1px solid #264074;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 5px;
+}
+
+
+span.card-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #272424;
+    padding-top: 5px;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+
+
+p.hours{
+    color: #264074!important;
+    font-size: 1rem;
+}*/
+
+
 
 .jumbotron p{
     font-family: 'Roboto', sans-serif;
@@ -60,17 +152,12 @@ h1{
     color: #F3F5F4;
 }
 
-.title{
-    padding-bottom: 0;
-    margin-bottom: 0;
-    font-size:4vmin;
-}
-
 .subtitle{
     font-family: 'Roboto', sans-serif;
-    font-weight: 1.125;
+    font-weight: 300;
     line-height: 1.4;
     padding-top: 0;
+    font-size: 1rem;
 }
 
 hr{
@@ -90,6 +177,10 @@ hr{
 
 /*Nav*/
 
+.navbar{
+    padding-top: 0;
+    padding-bottom: 10px;
+}
 @media only screen and (max-width: 445px) {
     .logo-img{
         width: 165px;
@@ -97,52 +188,31 @@ hr{
     }
 }
 
-/*Smalls texts*/
-
-p.box-title{
-    padding-bottom: 0;
-    margin-bottom: 5px;
-    font-size: 3vmin;
-    
+#navbar-button{
+    border: 2px solid #264074;
+    border-radius: 13px;
+    margin-left: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
 }
-p.hours{
-    color: #264074!important;
-}
+/*Buttons*/
 
-p.box-text{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+.btn-light{
+    background-color: #F3F5F4;
     color: #272424;
-    padding-top: 0;
-    margin-top: 0;
-    margin-bottom: 4px;
-    font-size: 2.5vmin;
-}
-
-p.title-classes{
-    border-top: 1px solid #264074;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-p.text-classes{
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-a.box-link{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    color: #264074;
-    text-decoration: none;
-    font-size: 2.5vmin;
-    margin-top: 0;
-    padding-top: 0;
+    border: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    border-radius: 13px;
 }
 
 /*SECTIONS*/
-
 /* Header */
 
 .header-container{
@@ -159,16 +229,17 @@ a.box-link{
     position: relative;
 }
 
+@media only screen and (max-width: 500px) {
+  .header-container{
+    background-attachment: scroll;
+  }
+}
+
+
 .jumbotron{
     background-color: rgb(38, 64, 116, 0.58);
 }
 
-@media only screen and (min-width: 500px) {
-  .jumbotron{
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-}
 
 /*Code Source: opaque-overlay: code institute, whiskey project*/
 .opaque-overlay{
@@ -210,93 +281,79 @@ a.box-link{
 }
 
 
-/*Benefits*/
+/*Plans*/
 
-.benefits-container{
-    height: 100%;
+.box-plan{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-end;
     flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-}
+    align-items: flex-end;
+    align-content: flex-end;
 
-
-.benefit-box{
-    height: 30%;
-    padding: 20px;
-}
-
-.benefit-item{
-    display: block;
-}
-
-.yoga-icon{
-    float: left;
-    width: 60px;
-    height: auto;
-    margin-right: 5px;
-}
-
-
-
-.openinghours{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    background: url(assets/opening.png);
-    min-height: 390px;
-    max-width: 264px;
-    border-radius: 23px;
-} 
-
-
-
-
-
-/*Schedule*/
-.schedule-days{
-    /*padding shortcut doesn't work for me here*/
-    border: 1px solid #264074;
-    font-size: 100%;
-    padding-top: 10px;
-    padding-left: 4px;
-    padding-right: 4px;
-}
-
-p.weekday{
     width: 100%;
-    height: auto;
-    overflow: hidden;
-    font-size: 3vmin;
+    min-height: 385px;
+    border-radius: 13px;
+    border: 1px solid #272424;
 }
 
-.box-allevels{
-    background-color: rgba(243, 245, 244, 0.55);
-    padding: 3px;
-    margin: 3px 0 3px 0;
+@media only screen and (max-width: 500px) {
+  .box-plan{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+
+    min-height: 100%;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    
+    margin-bottom: 5px;
+  }
 }
 
-.box-beginners{
-    background-color: rgba(191, 161, 125, 0.55);
-    padding: 3px;
-    margin: 3px 0 3px 0;
+.box-plan-20{
+    background-image: url(assets/plan-20.png);
+}
+.box-plan-35{
+    background-image: url(assets/plan-35.png);
+}
+.box-plan-49{
+    background-image: url(assets/plan-49.png);
 }
 
-.box-intermediate{
+.plans-card{
     background-color: rgba(38, 64, 116, 0.55);
-    padding: 3px;
-    margin: 3px 0 3px 0;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    padding-left: 15px;
 }
 
-.box-advanced{
-    background-color: rgba(39, 36, 36, 0.55);
-    padding: 3px;
-    margin: 3px 0 3px 0;
+@media only screen and (max-width: 500px) {
+  .plans-card{
+      margin-bottom: 0;
+  }
 }
 
+/*Installations*/
 
+.carousel-caption{
+    background-color: rgba(38, 64, 116, 0.55);
+}
+
+h5.carousel{
+    font-size: 30px;
+}
+
+p.carousel{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    padding-top: 0;
+}
