@@ -283,7 +283,6 @@ hr{
 /*Calendar*/
 
 
-
 .day-class-allevels{
     background-color: rgba(194, 199, 197, 0.548);
 }
@@ -299,7 +298,7 @@ hr{
 .day-class-advanced{
     background-color: rgba(39, 36, 36, 0.55);
 }
-/*
+
 p.day-class-title{
     color: #264074;
     margin-bottom: 4px;
@@ -328,8 +327,6 @@ p.day-class-info{
         font-size: 8px;
   }
 }
-
-*/
 
 /*Plans*/
 
@@ -382,11 +379,13 @@ p.day-class-info{
     padding-bottom: 15px;
     margin-bottom: 15px;
     padding-left: 15px;
+    height: 200px;
 }
 
 @media only screen and (max-width: 500px) {
   .plans-card{
       margin-bottom: 0;
+      border-radius: 13px;
   }
 }
 
