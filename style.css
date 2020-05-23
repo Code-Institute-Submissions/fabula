@@ -280,6 +280,56 @@ hr{
     border-right: 1px solid #272424;
 }
 
+/*Calendar*/
+
+
+
+.day-class-allevels{
+    background-color: rgba(194, 199, 197, 0.548);
+}
+
+.day-class-beginners{
+    background-color: rgba(191, 161, 125, 0.55);
+}
+
+.day-class-intermediate{
+    background-color: rgba(38, 64, 116, 0.55);
+}
+
+.day-class-advanced{
+    background-color: rgba(39, 36, 36, 0.55);
+}
+/*
+p.day-class-title{
+    color: #264074;
+    margin-bottom: 4px;
+    font-size: 0.75rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media only screen and (max-width: 500px) {
+    p.day-class-title{
+        font-size: 10px;
+  }
+}
+
+p.day-class-info{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #272424;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+@media only screen and (max-width: 500px) {
+    p.day-class-info{
+        font-size: 8px;
+  }
+}
+
+*/
 
 /*Plans*/
 
