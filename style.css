@@ -455,3 +455,20 @@ p.center-box{
     padding-bottom: 10px;
     color:#F3F5F4;
 }
+
+
+/*REVIEWS*/
+
+.review-img{
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.review-text{
+    margin-top: 20px;
+    padding-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 0;
+    color: #272424;
+}
