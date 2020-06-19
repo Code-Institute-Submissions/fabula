@@ -38,7 +38,8 @@ article.container-fluid{
 }
 
 section{
-    margin-top: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 
@@ -418,7 +419,7 @@ p.day-class-info{
   }
 }
 
-/*Installations*/
+/*Center*/
 
 .carousel-caption{
     background-color: rgba(38, 64, 116, 0.55);
@@ -462,6 +463,9 @@ p.center-box{
 .review-img{
     margin-top: 20px;
     border-radius: 50%;
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 
 .review-text{
@@ -472,3 +476,4 @@ p.center-box{
     margin-bottom: 0;
     color: #272424;
 }
+
