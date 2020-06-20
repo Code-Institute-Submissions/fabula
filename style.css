@@ -42,7 +42,6 @@ section{
     margin-bottom: 100px;
 }
 
-
 /* Text*/
 
 h1{
@@ -476,4 +475,47 @@ p.center-box{
     margin-bottom: 0;
     color: #272424;
 }
+
+/* LOCATION */
+
+.map-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Footer*/
+#footer{
+    margin-bottom: 0;
+    background-color:#F3F5F4;
+    padding-top: 20px;
+}
+
+
+
+
+/*BOOK ONLINE PAGE BOOK ONLINE PAGE BOOK ONLINE PAGE BOOK ONLINE PAGE BOOK ONLINE PAGE BOOK ONLINE PAGE BOOK ONLINE PAGE*/
+
+/* Contact Form */
+
+p.input-title{
+    font-size: 1rem;
+}
+
+.form-control, select{
+  background-color: rgb(38, 64, 116, 0.58);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.custom-select{
+  background-color: rgb(38, 64, 116, 0.58);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+
+
 

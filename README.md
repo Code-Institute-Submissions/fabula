@@ -50,7 +50,7 @@ So I decided of doing a responsive table with bootstrap "table-responsive" that 
 That is the reason why the design doesn't fit with the prototype, wasn't able to set up columns for the borders so the table is set up in row, I did some research to 
 make the table in columns instead of rows but couldn't make it and was taking too long and had to continue with the rest at that point.
 
-
+4. 
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 
