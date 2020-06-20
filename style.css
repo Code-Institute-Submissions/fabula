@@ -488,11 +488,31 @@ p.center-box{
 
 /*Footer*/
 #footer{
-    margin-bottom: 0;
     background-color:#F3F5F4;
-    padding-top: 20px;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
+.footer-links{
+    font-size: 0.90rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #264074;
+}
+
+@media only screen and (max-width: 500px) {
+  .footer-links{
+    font-size: 0.70rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #264074;
+}
+}
+
+i.fab{
+    color: #264074;
+}
 
 
 
@@ -500,22 +520,57 @@ p.center-box{
 
 /* Contact Form */
 
-p.input-title{
-    font-size: 1rem;
+#header-bookonline{
+    /* Code Source: https://css-tricks.com/perfect-full-page-background-image/*/
+    background: url(assets/bg-book-online.jpeg) no-repeat top center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
+
+#footer-bookonline{
+    background-color:#F3F5F4;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+form.book-online{
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+
+@media only screen and (max-width: 500px) {
+  form.book-online{
+    width: 100%;
+    position: relative;
+    left: 0;
+    }   
+}
+
 
 .form-control, select{
   background-color: rgb(38, 64, 116, 0.58);
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
+  border: 0;
 }
 
 .custom-select{
   background-color: rgb(38, 64, 116, 0.58);
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
+  border: 0;
 }
 
-
-
-
+p.input-title{
+    font-size: 1rem;
+}
