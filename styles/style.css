@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Roboto:ital,wght@0,300;0,500;1,300&display=swap');
+
+/* 
+
+FONTS -- 
+
+font-family: 'Oswald', sans-serif;
+
+- 300 (Light - Jumbotron)
+- 500 (Titles / Navbar)
+
+font-family: 'Roboto', sans-serif;
+
+- 300 (Light - Text)
+- 300i (Light Italic - Jumbotron)
+- 500 (Benefits List)
+
+COLORS -- 
+
+BLUE: #264074;
+BLACK: #272424;
+WHITE: #F3F5F4;
+Brownish: #BFA17D; rgb(191, 161, 125, 0.72);
+
+*/
+
+body{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    color: #272424;
+    background: rgb(38,64,116,.16);
+    
+}
+
+article.container-fluid{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* Text*/
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+
+h4{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+p{
+    font-size: 0.80rem;
+}
+
+p.card-title{
+    font-size: 1rem;
+    padding-bottom: 0;
+    border-top: 1px solid #264074;
+    margin-bottom: 0;
+    
+}
+
+p.card-text{
+    padding-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 0;
+    color: #272424;
+    
+}
+
+a.card-link{
+    font-size: 0.90rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #264074;
+}
+
+
+a.schedule-link{
+    font-size: 0.90rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #264074;
+}
+
+/*Plans Cards Text*/
+
+p.plans-class{
+    font-size: 19px;
+    color:#F3F5F4;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: 300;
+    letter-spacing: 2px;
+
+}
+
+p.plans-price{
+    font-size: 48px;
+    color:#F3F5F4;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+
+
+/*Cards Text
+
+p.card-title{
+    border-top: 1px solid #264074;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 5px;
+}
+
+
+span.card-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #272424;
+    padding-top: 5px;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+
+
+p.hours{
+    color: #264074!important;
+    font-size: 1rem;
+}*/
+
+
+
+.jumbotron p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.jumbotron p, h1{
+    color: #F3F5F4;
+}
+
+.subtitle{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    padding-top: 0;
+    font-size: 1.1rem;
+}
+
+.button-title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 1.4;
+    padding-top: 0;
+    font-size: 1.1rem;
+}
+
+hr{
+    margin-bottom: 0.625rem;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 50%;
+    border: 1px solid #264074;
+}
+
+@media only screen and (max-width: 445px) {
+    hr{
+        width: 100%;
+    }
+}
+
+/*Nav*/
+
+.navbar{
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+@media only screen and (max-width: 445px) {
+    .logo-img{
+        width: 165px;
+        height: 45px;
+    }
+}
+
+#navbar-button{
+    border: 2px solid #264074;
+    border-radius: 13px;
+    margin-left: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
+/*Buttons*/
+
+    /*button jumbotron*/
+.btn-light{
+    background-color: #F3F5F4;
+    color: #272424;
+    border: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    border-radius: 13px;
+}
+
+    /*button section*/
+.button-section-container{
+    padding-top: 20px;
+}
+
+.button-section{
+    background-color:  #264074;
+    color: #F3F5F4;
+    border: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    border-radius: 13px;
+}
+
+
+
+/*SECTIONS*/
+/* Header */
+
+.header-container{
+    height: 100vh;
+    /* Code Source: https://css-tricks.com/perfect-full-page-background-image/*/
+    background: url(../assets/hero.jpeg) no-repeat top center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+@media only screen and (max-width: 500px) {
+  .header-container{
+    background-attachment: scroll;
+  }
+}
+
+
+.jumbotron{
+    background-color: rgb(38, 64, 116, 0.58);
+}
+
+
+/*Code Source: opaque-overlay: code institute, whiskey project*/
+.opaque-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(243, 245, 244, 0.2);
+}
+
+
+/* Classes */
+
+
+.classes-container{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.card{
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.card-body{
+    padding: 5px;
+}
+
+.classes-img{
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border-top: 1px solid #272424;
+    border-left: 1px solid #272424;
+    border-right: 1px solid #272424;
+}
+
+/*Calendar*/
+
+
+.day-class-allevels{
+    background-color: rgba(194, 199, 197, 0.548);
+}
+
+.day-class-beginners{
+    background-color: rgba(191, 161, 125, 0.55);
+}
+
+.day-class-intermediate{
+    background-color: rgba(38, 64, 116, 0.55);
+}
+
+.day-class-advanced{
+    background-color: rgba(39, 36, 36, 0.55);
+}
+
+p.day-class-title{
+    color: #264074;
+    margin-bottom: 4px;
+    font-size: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media only screen and (max-width: 500px) {
+    p.day-class-title{
+        font-size: 9px;
+  }
+}
+
+p.day-class-info{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #272424;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+    p.day-class-info{
+        font-size: 8px;
+  }
+}
+
+/*Plans*/
+
+.box-plan{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    align-content: flex-end;
+
+    width: 100%;
+    min-height: 385px;
+    border-radius: 13px;
+    border: 1px solid #272424;
+}
+
+@media only screen and (max-width: 500px) {
+  .box-plan{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+
+    min-height: 100%;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    
+    margin-bottom: 5px;
+  }
+}
+
+.box-plan-20{
+    background-image: url(assets/plan-20.png);
+}
+.box-plan-35{
+    background-image: url(assets/plan-35.png);
+}
+.box-plan-49{
+    background-image: url(assets/plan-49.png);
+}
+
+.plans-card{
+    background-color: rgba(38, 64, 116, 0.55);
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    height: 200px;
+}
+
+@media only screen and (max-width: 500px) {
+  .plans-card{
+      margin-bottom: 0;
+      border-radius: 13px;
+  }
+}
+
+/*Center*/
+
+.carousel-caption{
+    background-color: rgba(38, 64, 116, 0.55);
+}
+
+h5.carousel{
+    font-size: 30px;
+}
+
+p.carousel{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    padding-top: 0;
+}
+
+.center-s-box{
+    background-color: rgba(38, 64, 116, 0.55);
+}
+
+h5.center-box{
+    font-size: 14px;
+    color: #F3F5F4;
+    padding-top: 10px;
+}
+
+p.center-box{
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    padding-top: 0;
+    padding-bottom: 10px;
+    color:#F3F5F4;
+}
+
+
+/*REVIEWS*/
+
+.review-img{
+    margin-top: 20px;
+    border-radius: 50%;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.review-text{
+    margin-top: 20px;
+    padding-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 0;
+    color: #272424;
+}
+
+/* LOCATION */
+
+.map-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Footer*/
+#footer{
+    background-color:#F3F5F4;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-links{
+    font-size: 0.90rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #264074;
+}
+
+@media only screen and (max-width: 500px) {
+  .footer-links{
+    font-size: 0.70rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #264074;
+}
+}
+
+i.fab{
+    color: #264074;
+}
+
+
+
+/*BOOK ONLINE PAGE BOOK ONLINE PAGE BOOK ONLINE PAGE BOOK ONLINE PAGE BOOK ONLINE PAGE BOOK ONLINE PAGE BOOK ONLINE PAGE*/
+
+/* Contact Form */
+
+#header-bookonline{
+    /* Code Source: https://css-tricks.com/perfect-full-page-background-image/*/
+    background: url(../assets/bg-book-online.jpeg) no-repeat top center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#footer-bookonline{
+    background-color:#F3F5F4;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+form.book-online{
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+
+@media only screen and (max-width: 500px) {
+  form.book-online{
+    width: 100%;
+    position: relative;
+    left: 0;
+    }   
+}
+
+
+.form-control, select{
+  background-color: rgb(38, 64, 116, 0.58);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  border: 0;
+}
+
+.custom-select{
+  background-color: rgb(38, 64, 116, 0.58);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  border: 0;
+}
+
+p.input-title{
+    font-size: 1rem;
+}
