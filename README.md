@@ -17,10 +17,10 @@ We are going to implement the information by priorities:
 1. FIRST SECTION / HEADER: We want to show the offer - First Class for free
 2. SECOND SECTION / CLASSES: We want to show the types and levels of yoga offered - We will link to Wikipedia for the user read further
 3. THIRD SECTION / CALENDAR: We want to show the calendar for the week so the user can already know if they can fit or not in the center.
-4. We want to show the prices, divided in 3 types depending on the number of classes you take a week.
-5. We want to show an overview of the installations and the main features they offer.
-6. We want to share three reviews from Fabula center clients. 
-7. We want to share location and a short book form for any inquiry apart from the book online.
+4. FORTH SECTION / PLANS: We want to show the prices, divided in 3 types depending on the number of classes you take a week.
+5. FIFTH SECTION / CENTER: We want to show an overview of the installations and the main features they offer.
+6. SIXTH SECTION / REVIEWS: We want to share three reviews from Fabula center clients. 
+7. SIXTH SECTION / CONTACT: We want to share location and a short book form for any inquiry apart from the book online.
 
 There will be two types of contact:
 - BOOK ONLINE
@@ -39,6 +39,7 @@ Features
     - comments
 
     We will write a note: "You'll receive an email with your class confirmation soon"
+    ^ couldn't do that at the end - didn't know how.
 
 2. SECOND SECTION / CLASSES: Classes Cards with Wikipedia link to learn further. Book Online button at the bottom of the section.
 
@@ -50,56 +51,79 @@ So I decided of doing a responsive table with bootstrap "table-responsive" that 
 That is the reason why the design doesn't fit with the prototype, wasn't able to set up columns for the borders so the table is set up in row, I did some research to 
 make the table in columns instead of rows but couldn't make it and was taking too long and had to continue with the rest at that point.
 
-4. 
+4. FORTH SECTION / PRICES: 
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+There is 3 types of informative prices, if you want to book online you'll always go to the booking online page because I can't implement the payment thing yet.
+The idea is to try the class then get your membership but when I am able I'd like to add the auto payment to have your membership straight away.
 
-Existing Features
-Feature 1 - allows users X to achieve Y, by having them fill out Z
-...
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
+5. FIFTH SECTION / CENTER INSTALLATIONS:
+
+I use a carousel in order to add all the info regarding the center, more like a short "about us" in just one section. In mobile phone the text is out of the carousel so it's
+better seen.
+
+6. SIXTH SECTION / REVIEWS:
+
+I added reviews as an extra section but it's not in the menu, should follow the installation as an extra feedback about the place.
+
+7. SIXTH SECTION / CONTACT:
+
+There is a map that links you directly to google maps. At the right part I added a quick contact form for general inquiries in case you are not ready to book a free online class yet.
+
+8. FOOTER:
+
+Large Screens: Logo Linked to the main page + email link, phone link to whatsapp app, google maps link to location + social media links.
+Mobile Screens: I hidded the logo to save more space.
+
+
+BOOK ONLINE SECTIONS:
+
+1. Navbar & Footer the same as main page + Book Online form filling the page.
+
+BOOK ONLINE FORM:
+    - Name & Surname
+    - email
+    - phone number
+    - type of class
+    - day preferred
+    - time preferred
+    - comments
 
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
-Features Left to Implement
-Another feature idea
-Technologies Used
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+I would like to add a platform where the user can attend to the guestlist of the class by using his private area. 
+I would like to make online bookings with payment hub.
+I would like to have a more dinamic calendar to be able to access the class guestlist clicking the class on the calendar.
 
-JQuery
-The project uses JQuery to simplify DOM manipulation.
-Testing
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
-
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-Contact form:
-Go to the "Contact Us" page
-Try to submit the empty form and verify that an error message about the required fields appears
-Try to submit the form with an invalid email address and verify that a relevant error message appears
-Try to submit the form with all inputs valid and verify that a success message appears.
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
-Deployment
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
-
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-
-Different values for environment variables (Heroku Config Vars)?
-Different configuration files?
-Separate git branch?
-In addition, if it is not obvious, you should also describe how to run your code locally.
 
 Credits
+Snippets
+& Technologies:
+
+https://www.w3schools.com/howto/howto_css_image_text.asp
+https://bits.theorem.co/css-pro-tips-responsive-font-sizes-and-when-to-use-which-units/
+
+https://getbootstrap.com/
+Navbar
+Jumbotron
+Cards Classes
+Calendar table
+Cards plans
+Installations Carrousel
+Contact Forms
+
 Content
-The text for section Y was copied from the Wikipedia article Z
+The content is all written by me. 
+
 Media
-The photos used in this site were obtained from ...
+The photos used in this site were obtained from adobe stocks.
+
+
 Acknowledgements
-I received inspiration for this project from X
+I received inspiration for this project from:
+
+https://www.awwwards.com/best-free-fonts.html
+https://design.google/resources/
+https://color.adobe.com/es/create
+
+https://fundaciolotusblau.org/
+https://www.yogaone.es/es/yogaone-mataro
